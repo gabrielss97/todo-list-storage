@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --white: white;
+  --main-color: #8a42f2;
+  --soft-black: #18181b;
+  --black: #0e0e10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 4rem;
+  background: var(--soft-black);
+  color: white;
+}
+
+.container h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.container form {
+  margin-bottom: 2rem;
+}
+
+.container form input {
+  width: 500px;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.container form input:focus-visible {
+  outline: none;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.container ul li {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  gap: 2rem;
+}
+
+.container ul li span {
+  word-wrap: break-word;
+}
+
+.container ul li .actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.container ul li .actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.check {
+  color: white;
+  font-size: 2rem;
+}
+
+.check:hover {
+  color: rgb(84, 210, 99);
+}
+
+.trash {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.trash:hover {
+  color: rgb(203, 70, 70);
+}
+
+.todo-complete {
+  text-decoration: line-through;
+}
